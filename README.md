@@ -1,5 +1,6 @@
 # DevLogHMMA238
-HMMA238 - Scientific Software Development
+HMMA238 - Scientific Software Development. 
+Created by Mathias Gout and Julie Røste. 
 
 (En français ci-dessous). A work in the cours Scientific Software Development. Written in the programming language Python using iPython Notebook. 
 
