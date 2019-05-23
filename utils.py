@@ -4,7 +4,6 @@ Created on Wed May  1 22:55:13 2019
 
 @author: julie
 """
-# Making utils.py file
 
 def calcul_nb_voisins(Z):
     """
