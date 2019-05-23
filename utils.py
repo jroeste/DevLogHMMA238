@@ -6,7 +6,12 @@ Created on Wed May  1 22:55:13 2019
 """
 # Making utils.py file
 
-def calcul_nb_voisins(Z): 
+def calcul_nb_voisins(Z):
+    """
+    Cette fonction prend en argument une liste (de liste) qui 
+    représente la "carte" du jeu de la vie.
+    Elle renvoie le nombre de voisins vivants de chaque cellules
+    """
     forme = len(Z), len(Z[0]) 
     N = [[0, ] * (forme[0]) for i in range(forme[1])] 
     for x in range(1, forme[0] - 1): 
