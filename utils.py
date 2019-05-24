@@ -41,7 +41,7 @@ def iteration_jeu(Z):
     return Z
 
 
-def fig_digit(x, w, alpha):
+def fig_digit2(x, w, alpha):
     """
     truc qui explique
     """
