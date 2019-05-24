@@ -45,6 +45,7 @@ def fig_digit(x, w, alpha):
     """
     truc qui explique
     """
+    w = np.ravel(w)
     wTx = w.dot(x)
     norm_w = np.linalg.norm(w)
     
