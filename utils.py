@@ -43,6 +43,7 @@ def iteration_jeu(Z):
 
 def fig_digit(x, w, alpha):
     """
+    truc qui explique
     """
     w = np.ravel(w)
     wTx = w.dot(x)
