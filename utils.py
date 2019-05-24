@@ -4,6 +4,8 @@ Created on Wed May  1 22:55:13 2019
 
 @author: julie
 """
+import numpy as np
+import matplotlib.pyplot as plt
 
 def calcul_nb_voisins(Z):
     """
@@ -37,3 +39,17 @@ def iteration_jeu(Z):
             elif Z[x][y] == 0 and N[x][y] == 3: 
                 Z[x][y] = 1
     return Z
+
+
+def fig_digit(x, w, alpha):
+    """
+    """
+    w = np.ravel(w)
+    wTx = w.dot(x)
+    norm_w = np.linalg.norm(w)
+    
+    xmod = x - alpha*(wTx/norm_w**2)*w
+    
+    return plt.imshow(xmod.reshape(28,28))  
+
+
