@@ -6,6 +6,7 @@ Created on Wed May  1 22:55:13 2019
 """
 from numba import jit
 import numpy as np
+import matplotlib.pyplot as plt
 
 def calcul_nb_voisins(Z):
     """
@@ -74,3 +75,20 @@ def iteration_jeu_np(Z):
             elif Z[x,y] == 0 and N[x,y] == 3: 
                 Z[x,y] = 1
     return Z
+
+def fig_digit(x, w, alpha):
+    """
+    x = un individu du jeu de données MNIST
+    w = le vecteur appris par la fonction LogisticRegression sur MNIST
+    alpha = un reel 
+    
+    Cette fonction renvoie l'image de xmod qui est défini à la question 4 de l'exercice 2 du TP noté 
+    """
+    w = np.ravel(w)
+    wTx = w.dot(x)
+    norm_w = np.linalg.norm(w)
+    
+    xmod = x - alpha*(wTx/norm_w**2)*w
+    
+    return plt.imshow(xmod.reshape(28,28))  
+

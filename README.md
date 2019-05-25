@@ -1,8 +1,10 @@
 # DevLogHMMA238
-HMMA238 - Développement Logiciel. 
+HMMA238 - Développement Logiciel.
+<br/>
 Créé par Mathias Gout et Julie Røste. 
 
-Projet noté de Développement Logiciel HMMA238. Il est écrit en Python et nous utilisons iPython Notebook.
+Projet noté de Développement Logiciel HMMA238. 
+<br/>Il est écrit en Python et nous utilisons iPython Notebook.
 
 ## Les exercices
 ### Exercice 1 - "Jeu de la vie".
