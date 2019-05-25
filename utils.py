@@ -41,6 +41,23 @@ def iteration_jeu(Z):
                 Z[x][y] = 1
     return Z
 
+def plotJeuDeLaVie(nbIterations, Z, iter_func):
+    """
+    Cette fonction affiche l'évolution des matrices du Jeu de la vie
+    """
+    Zcopy = Z.copy()
+    plt.figure(figsize=(15, 6))
+    plt.subplot(2,5,1)
+    plt.title("Iteration 0")
+    plt.imshow(Zcopy)
+    for i in range(2,nbIterations+1):
+        plt.subplot(2,5,i)
+        Zcopy = iter_func(Zcopy)
+        plt.title("Iteration "+str(i-1))
+        plt.imshow(Zcopy)
+        
+    return plt.imshow(Zcopy)
+
 @jit(nopython=True)
 def calcul_nb_voisins_np(Z):
     """
