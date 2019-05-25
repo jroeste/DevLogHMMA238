@@ -43,7 +43,11 @@ def iteration_jeu(Z):
 
 def fig_digit(x, w, alpha):
     """
-    truc qui explique
+    x = un individu du jeu de données MNIST
+    w = le vecteur appris par la fonction LogisticRegression sur MNIST
+    alpha = un reel 
+    
+    Cette fonction renvoie l'image de xmod qui est défini à la question 4 de l'exercice 2 du TP noté 
     """
     w = np.ravel(w)
     wTx = w.dot(x)
