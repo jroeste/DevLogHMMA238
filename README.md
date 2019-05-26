@@ -3,7 +3,7 @@
 
 <i>Créé par Mathias Gout et Julie Røste.</i> 
 
-<br/>Projet noté de Développement Logiciel HMMA238, Université de Montpellier. 
+<br/>Projet noté de Développement Logiciel, HMMA238, Université de Montpellier. 
 <br/>Il est écrit en Python et nous utilisons iPython Notebook.
 
 ## Les exercices
