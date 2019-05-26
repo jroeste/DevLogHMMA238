@@ -104,13 +104,12 @@ def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
             if ((i*5+j)>=nbIterations):
                 break
             plt.subplot2grid((6,5), (i,j)) # Have to use subplot2grid instead of subplot for > 10 subplots.
-            plt.title("iteration "+str(i*5+j))
+            plt.title("Iteration "+str(i*5+j))
             if (i==0 and j==0):
                 plt.imshow(Zcopy)
             else:
                 Zcopy = iter_func(Zcopy)
                 plt.imshow(Zcopy)
-    plt.tight_layout()
     
     return plt.tight_layout()
     
