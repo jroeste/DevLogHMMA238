@@ -1,10 +1,7 @@
 # DevLogHMMA238
 HMMA238 - Développement Logiciel.
-<br/>
-Créé par Mathias Gout et Julie Røste. 
 
-Projet noté de Développement Logiciel HMMA238. 
-<br/>Il est écrit en Python et nous utilisons iPython Notebook.
+Créé par Mathias Gout et Julie Røste. Projet noté de Développement Logiciel HMMA238, Université de Montpellier. Il est écrit en Python et nous utilisons iPython Notebook.
 
 ## Les exercices
 ### Exercice 1 - "Jeu de la vie".
@@ -15,7 +12,7 @@ Dans cette exercice, nous allons utiliser le jeu de données MNIST qui contient 
 
 -------
 
-A work in the cours Scientific Software Development, HMMA238, University of Montpellier. Written in the programming language Python using iPython Notebook. By Mathias Gout and Julie Røste.
+ By Mathias Gout and Julie Røste. A work in the cours Scientific Software Development, HMMA238, University of Montpellier. Written in the programming language Python using iPython Notebook.
 ## The exercises
 ### Exercise 1 - "Game of life".
 This is a zero-player game, where the goal is to observe the evolution of, in this case a matrix, from an inital state. This state is decided by human interaction. 
