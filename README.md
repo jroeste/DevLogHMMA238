@@ -1,7 +1,7 @@
 # DevLogHMMA238
-HMMA238 - Développement Logiciel.
+<b>HMMA238 - Développement Logiciel.</b>
 
-Créé par Mathias Gout et Julie Røste. 
+<i>Créé par Mathias Gout et Julie Røste.</i> 
 
 <br/>Projet noté de Développement Logiciel HMMA238, Université de Montpellier. 
 <br/>Il est écrit en Python et nous utilisons iPython Notebook.
@@ -12,10 +12,12 @@ C'est un jeu à zero joueurs où le but est d'observer l'évolution de cellules 
 
 ### Exercice 2 - "Régression logistique avec le jeu de données MNIST". 
 Dans cette exercice, nous allons utiliser le jeu de données MNIST qui contient des chiffres de 0 à 9 écrit à la main.
+<br/>Nous allons effectuer une régression logistique sur les individus 3 et 7 ainsi qu'une ACP.
+<br/>Nous afficherons également quelques individus.
 
 -------
 
-By Mathias Gout and Julie Røste.
+<i>By Mathias Gout and Julie Røste.</i>
 
 <br/>A work in the cours Scientific Software Development, HMMA238, University of Montpellier. 
 <br/>Written in the programming language Python using iPython Notebook. 
