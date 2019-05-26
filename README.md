@@ -3,7 +3,7 @@
 
 <i>Créé par Mathias Gout et Julie Røste.</i> 
 
-<br/>Projet noté de Développement Logiciel HMMA238, Université de Montpellier. 
+<br/>Projet noté de Développement Logiciel, HMMA238, Université de Montpellier. 
 <br/>Il est écrit en Python et nous utilisons iPython Notebook.
 
 ## Les exercices
@@ -28,4 +28,6 @@ Dans cette exercice, nous allons utiliser le jeu de données MNIST qui contient 
 This is a zero-player game, where the goal is to observe the evolution of, in this case a matrix, from an inital state. This state is decided by human interaction. 
 
  ### Exercise 2 - "Logistic regression with MNIST data". 
-In this exercise, we will use the MNIST data, a dataset that contains handwritten digits with labels from 0 to 9. 
+In this exercise, we will use the MNIST data, a dataset that contains handwritten digits with labels from 0 to 9.
+<br/> We will do a logistic regression on the individuals with labels 3 and 7, in addition to a principal component analysis with two dimension. 
+<br/> We will also make plots of some individuals.
