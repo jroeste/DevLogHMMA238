@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed May  1 22:55:13 2019
 
-@author: julie
-"""
 from numba import jit
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,7 +46,6 @@ def plotJeuDeLaVie(nbIterations, Z, iter_func):
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
     Zcopy = Z.copy()
-    #plt.figure(figsize=(15, 6))
     plt.subplot(2,5,1)
     plt.title("Iteration 0")
     plt.imshow(Zcopy)
@@ -63,14 +58,13 @@ def plotJeuDeLaVie(nbIterations, Z, iter_func):
     return plt.imshow(Zcopy)
 
 @jit(nopython=True)
-def calcul_nb_voisins_np(Z):
+def calcul_nb_voisins_jit(Z):
     """
-    Cette fonction prend en argument une liste (de liste) qui 
-    représente la "carte" du jeu de la vie.
+    Cette fonction prend en argument une liste (de liste)/ numpy array
+    qui représente la "carte" du jeu de la vie.
     Elle renvoie le nombre de voisins vivants de chaque cellules
     """
     forme = len(Z), len(Z[0]) 
-    #N = [[0, ] * (forme[0]) for i in range(forme[1])]
     N = np.zeros((forme[0],forme[1]))
     for x in range(1, forme[0] - 1): 
         for y in range(1, forme[1] - 1): 
@@ -80,15 +74,15 @@ def calcul_nb_voisins_np(Z):
     return N
 
 @jit(nopython=True)
-def iteration_jeu_np(Z):
+def iteration_jeu_jit(Z):
     """
-    Cette fonction prend en argument une liste (de liste) qui 
-    représente la "carte" du jeu de la vie.
+    Cette fonction prend en argument une liste (de liste) / numpy array 
+    qui représente la "carte" du jeu de la vie.
     Elle retourne la "carte" du jeu de la vie une génération 
     plus tard, après les naissances et décès des cellules.
     """
     forme = len(Z), len(Z[0])
-    N = calcul_nb_voisins_np(Z)
+    N = calcul_nb_voisins_jit(Z)
     for x in range(1,forme[0]-1): 
         for y in range(1,forme[1]-1): 
             if Z[x,y] == 1 and (N[x,y] < 2 or N[x,y] > 3):
@@ -100,13 +94,12 @@ def iteration_jeu_np(Z):
 def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
     """
     nbIterations = le nombre d'iterations voulu
-    Z = une liste (de liste)
+    Z = une liste (de liste) / numpy array.
     iter_func = une fonction qui affiche l'etat des cellules apres une iteration
     
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
     Zcopy = Z.copy()
-    #plt.figure(figsize=(15,15))
     for i in range(6):
         for j in range(5):
             if ((i*5+j)>=nbIterations):
@@ -136,5 +129,4 @@ def fig_digit(x, w, alpha):
     
     xmod = x - alpha*(wTx/norm_w**2)*w
     
-    return plt.imshow(xmod.reshape(28,28))  
-
+    return plt.imshow(xmod.reshape(28,28))
