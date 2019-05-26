@@ -43,6 +43,10 @@ def iteration_jeu(Z):
 
 def plotJeuDeLaVie(nbIterations, Z, iter_func):
     """
+    nbIterations = le nombre d'iterations voulu
+    Z = une liste (de liste)
+    iter_func = une fonction qui affiche l'etat des cellules apres une iteration
+    
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
     Zcopy = Z.copy()
@@ -95,6 +99,10 @@ def iteration_jeu_np(Z):
 
 def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
     """
+    nbIterations = le nombre d'iterations voulu
+    Z = une liste (de liste)
+    iter_func = une fonction qui affiche l'etat des cellules apres une iteration
+    
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
     Zcopy = Z.copy()
