@@ -16,6 +16,7 @@ Dans cette exercice, nous allons utiliser le jeu de données MNIST qui contient 
 <br/>Nous afficherons également quelques individus.
 
 -------
+<b>HMMA238 - Scientific Software Development.</b>
 
 <i>By Mathias Gout and Julie Røste.</i>
 
