@@ -93,6 +93,28 @@ def iteration_jeu_np(Z):
                 Z[x,y] = 1
     return Z
 
+def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
+    """
+    Cette fonction affiche l'évolution des matrices du Jeu de la vie
+    """
+    Zcopy = Z.copy()
+    plt.figure(figsize=(15,15))
+    for i in range(6):
+        for j in range(5):
+            if ((i*5+j)>=nbIterations):
+                break
+            plt.subplot2grid((6,5), (i,j)) # Have to use subplot2grid instead of subplot for > 10 subplots.
+            plt.title("iteration "+str(i*5+j))
+            if (i==0 and j==0):
+                plt.imshow(Zcopy)
+            else:
+                Zcopy = iter_func(Zcopy)
+                plt.imshow(Zcopy)
+    plt.tight_layout()
+    
+    return plt.tight_layout()
+    
+    
 def fig_digit(x, w, alpha):
     """
     x = un individu du jeu de données MNIST
