@@ -15,7 +15,9 @@ Dans cette exercice, nous allons utiliser le jeu de données MNIST qui contient 
 
 -------
 
-A work in the cours Scientific Software Development, HMMA238, University of Montpellier. Written in the programming language Python using iPython Notebook. By Mathias Gout and Julie Røste.
+A work in the cours Scientific Software Development, HMMA238, University of Montpellier. 
+<br/>Written in the programming language Python using iPython Notebook. 
+<br/>By Mathias Gout and Julie Røste.
 ## The exercises
 ### Exercise 1 - "Game of life".
 This is a zero-player game, where the goal is to observe the evolution of, in this case a matrix, from an inital state. This state is decided by human interaction. 
