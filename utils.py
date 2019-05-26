@@ -46,6 +46,7 @@ def plotJeuDeLaVie(nbIterations, Z, iter_func):
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
     Zcopy = Z.copy()
+    plt.figure(figsize=(15,15))
     plt.subplot(2,5,1)
     plt.title("Iteration 0")
     plt.imshow(Zcopy)
@@ -99,6 +100,7 @@ def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
     
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
     """
+    plt.figure(figsize=(15,15))
     Zcopy = Z.copy()
     for i in range(6):
         for j in range(5):
