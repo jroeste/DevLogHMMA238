@@ -40,7 +40,7 @@ def iteration_jeu(Z):
 def plotJeuDeLaVie(nbIterations, Z, iter_func):
     """
     nbIterations = le nombre d'iterations voulu
-    Z = une liste (de liste)
+    Z = une liste (de liste) representant la "carte" du jeu de la vie
     iter_func = une fonction qui affiche l'etat des cellules apres une iteration
     
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
@@ -95,7 +95,7 @@ def iteration_jeu_jit(Z):
 def plotJeuDeLaVie_manySP(nbIterations, Z, iter_func):
     """
     nbIterations = le nombre d'iterations voulu
-    Z = une liste (de liste) / numpy array.
+    Z = une liste (de liste) (numpy array) representant la "carte" du jeu de la vie.
     iter_func = une fonction qui affiche l'etat des cellules apres une iteration
     
     Cette fonction affiche l'évolution des matrices du Jeu de la vie
